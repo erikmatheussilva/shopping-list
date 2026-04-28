@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Quicklist</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="assets/icons/logo.svg" alt="Quicklist logo" />
+    </header>
+    <main>
+      <div class="main-container container">
+        <div class="back">
+          <img src="assets/icons/arrow-left.svg" alt="Return" />
+          <span>Voltar</span>
+        </div>
+        <h1>Compras da semana</h1>
+
+        <div id="input-wrapper" class="input-wrapper">
+          <input
+            type="text"
+            id="item"
+            name="item"
+            placeholder="Adicione um novo item"
+            required
+          />
+          <a href="" id="addButton" class="button">Adicionar item</a>
+        </div>
+
+        <ul id="items-list">
+          <p id="empty-list">Nenhum item na lista...</p>
+        </ul>
+        <div id="toast-container"></div>
+        <div class="clear">
+            <a href="" id="clear-button" class="button">Limpar lista</a>
+        </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
